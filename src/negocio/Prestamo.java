@@ -1,14 +1,14 @@
 package negocio;
 
-import java.util.Date;
+
 
 public class Prestamo {
     private int id;
     private Juego juego;
     private Cliente cliente;
-    private Date fecha;
+    private String fecha;
     private double precio;
-    public Prestamo(int id,Juego juego, Cliente cliente, Date fecha, double precio) {
+    public Prestamo(int id,Juego juego, Cliente cliente, String fecha, double precio) {
         this.juego = juego;
         this.cliente = cliente;
         this.id = id;
@@ -40,10 +40,10 @@ public class Prestamo {
     public void setCliente(Cliente cliente) {
         this.cliente = cliente;
     }
-    public Date getFecha() {
+    public String getFecha() {
         return fecha;
     }
-    public void setFecha(Date fecha) {
+    public void setFecha(String fecha) {
         this.fecha = fecha;
     }
     public double getPrecio() {
